@@ -1,3 +1,3 @@
 # Streaming Visualization
 
-Using Flask-SocketIO.
+Visualize real-time data, powered by Javascript plots + Flask-SocketIO.
