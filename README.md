@@ -1,6 +1,6 @@
 # Streaming Visualization
 
-Visualize real-time data, powered by Javascript plots + Flask-SocketIO.
+Visualize real-time data using [Chart.js](http://www.chartjs.org/) + [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/).
 
 ## Get Started
 
