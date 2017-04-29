@@ -1,3 +1,4 @@
+import random
 from flask import Flask, render_template, session, request
 from flask_socketio import SocketIO, emit, join_room, leave_room, \
     close_room, rooms, disconnect
@@ -19,8 +20,10 @@ def background_thread():
     while True:
         socketio.sleep(1)
         count += 1
+        value = random.uniform(1, 50)
+        data = "new value is " + str(value)
         socketio.emit('my_response',
-                      {'data': 'Server generated event', 'count': count},
+                {'data': data, 'count': count, 'value': value},
                       namespace='/test')
 
 
